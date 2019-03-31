@@ -1,4 +1,4 @@
 ## Investigation 
-After taking a rather careful look at the homepage of sjtu and Taobao, I catually found some merits in the homepage loading sequence of our school's homepage.
-In web frontend practice, it is recommended to load the .js files at the rear of <body> and the .css files in <head>, and sjtu's homepage abides by that rule faithfully, while the distribution of .js files in the Taobao homepage seem rather chaotic given they spread all over the place, unmistakably both in <body> and <head>, which can be slightly cumbersome.
+After taking a rather careful look at the homepage of sjtu(www.sjtu.edu.cn) and Taobao, I actually found some merits in the loading sequence of our school's homepage.
+In web frontend coding practice, it is recommended to load the .js files at the rear of <body> and the .css files in <head> so as to avoid invalid reference caused asynchronous loading of .js files and DOM elements and postponement caused by loading of .js files and shorten the time for the page to be fully painted. Sjtu's homepage abides by this rule faithfully, while the distribution of .js files in the Taobao homepage seem rather chaotic given they spread all over the place, unmistakably both in <body> and <head>, which can be slightly cumbersome.
 So to this end, optimizations are due in the homepage of Taobao rather than sjtu's homepage.
